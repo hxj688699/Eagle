@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerLayout"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <include layout="@layout/view_title_bar" />
+
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/tabBarContainer"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <RadioButton
+                android:id="@+id/financeButton"
+                android:layout_gravity="center_horizontal"
+                style="@style/TabBarRadioButton"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_icon_finance" />
+
+            <RadioButton
+                android:id="@+id/loanListButton"
+                android:layout_gravity="center_horizontal"
+                style="@style/TabBarRadioButton"
+                android:checked="false"
+                android:drawableTop="@drawable/tab_icon_loanlist" />
+
+            <RadioButton
+                android:id="@+id/meiCircleButton"
+                android:layout_gravity="center_horizontal"
+                style="@style/TabBarRadioButton"
+                android:checked="false"
+                android:drawableTop="@drawable/tab_icon_meicircle" />
+
+            <RadioButton
+                android:id="@+id/manageMoneyButton"
+                android:layout_gravity="center_horizontal"
+                style="@style/TabBarRadioButton"
+                android:checked="false"
+                android:drawableTop="@drawable/tab_icon_manage_money" />
+        </RadioGroup>
+    </FrameLayout>
+</FrameLayout>
